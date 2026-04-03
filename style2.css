@@ -73,10 +73,13 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 12px;
   margin-top: 20px;
+  align-items: stretch;
 }
 
 .galeria img {
   width: 100%;
+  height: 200px; /* PADRONIZAÇÃO AQUI */
+  object-fit: cover; /* NÃO DISTORCE */
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
